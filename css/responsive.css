@@ -1,0 +1,68 @@
+@media screen and (max-width: 1700px) {
+  html {
+    font-size: 58%;
+  }
+  .header-inner,
+  .expertise-inner,
+  .creates-inner,
+  .colab-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 1300px;
+  }
+  .e-top-right p {
+    width: 632px;
+  }
+  .expertise-2 {
+    padding-left: 13.2rem;
+  }
+  .expertise-3 {
+    padding-left: 13.9rem;
+  }
+  .expertise-5 {
+    padding-left: 12.4rem;
+    padding-top: 45px;
+  }
+  .creates-content {
+    margin-right: 94px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 55%;
+  }
+  .header-inner,
+  .expertise-inner,
+  .creates-inner,
+  .colab-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 1150px;
+  }
+  .expertise-2 {
+    padding-left: 8.2rem;
+  }
+  .expertise-3 {
+    padding-left: 6.9rem;
+  }
+  .expertise-5 {
+    padding-left: 7.4rem;
+  }
+  .expertise-6 {
+    padding-left: 7rem;
+  }
+  .colab-right p {
+    width: 481px;
+  }
+}
+/* min width */
+@media screen and (min-width: 1921px) {
+  .creates-content {
+    margin-right: 178px;
+  }
+}
+@media screen and (min-width: 2039px) {
+  .creates-content {
+    margin-right: 262px;
+  }
+}

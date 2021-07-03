@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/career1.css" />
+    <link rel="stylesheet" href="./css/career-responsive.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/5d32f818d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ratiocinative Solutions</title>
+  </head>
+  <body>
+    <div class="super-wrapper">
+      <div class="header">
+        <nav id="nav">
+          <a href="./index.html">
+            <img src="./images/c-logo.png" alt="logo" class="logo"
+          /></a>
+          <ul>
+            <li><a href="#">about</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a class="h-careers" href="./career.html">careers</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-banner">
+        <div class="header-inner">
+          <div class="career">
+            <h2>Front End Developer</h2>
+            <h3>Job Description</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
+              veritatis eius provident a alias! Quae veritatis, incidunt
+              voluptatibus magni dicta alias quia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
+              veritatis eius provident a alias! Quae veritatis, incidunt
+              voluptatibus magni dicta alias quia!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
+              veritatis eius provident a alias! Quae veritatis, incidunt
+              voluptatibus magni dicta alias quia! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Odit, temporibus.
+            </p>
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
+              veritatis eius provident a alias! Quae veritatis, incidunt
+              voluptatibus magni dicta alias quia!
+            </p> -->
+            <button><a href="#">Apply Now</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="quote-inner">
+          <h2>
+            We’re here to put a dent in the Universe. Otherwise why else even be
+            here?
+          </h2>
+          <h3>- Steve Jobs</h3>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-inner">
+          <div class="f-logo">
+            <a href="#"><img src="./images/c-f-logo.png" alt="logo" /></a>
+          </div>
+          <div class="footer-content-right">
+            <div class="address">
+              <h2>Address</h2>
+              <p>
+                <a href="#">
+                  A-606 Bestech Business <br />
+                  Towers,Sector 66,Mohali</a
+                >
+              </p>
+            </div>
+            <div class="email">
+              <h2>Email</h2>
+              <p><a href="#"> info@ratiocinativesolutions.com</a></p>
+            </div>
+            <div class="phone">
+              <h2>Phone</h2>
+              <p><a href="#"> 0172 29 70 873</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <h4>Copyright &copy; 2021 Ratiocinative Solutions</h4>
+        </div>
+      </div>
+    </div>
+    <script>
+      // intersection observer start
+      const nav = document.querySelector("#nav");
+      const nav_sector = document.querySelector(".header-banner");
+
+      const nav_sector_options = {
+        rootMargin: "-645px 0px 0px 0px",
+      };
+      const nav_sector_Observer = new IntersectionObserver(function (
+        entries,
+        nav_sector_Observer
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            nav.classList.add("nav-active");
+            console.log("yes");
+          } else {
+            nav.classList.remove("nav-active");
+          }
+        });
+      },
+      nav_sector_options);
+
+      nav_sector_Observer.observe(nav_sector);
+      // intersection observer end
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+@media screen and (max-width: 1700px) {
+  html {
+    font-size: 58%;
+  }
+  .header-inner,
+  .jobs-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 1300px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 55%;
+  }
+  .header-inner,
+  .jobs-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 1150px;
+  }
+  .acc-jobs {
+    width: 34.3rem;
+  }
+}
