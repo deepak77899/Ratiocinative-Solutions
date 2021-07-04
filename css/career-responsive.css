@@ -23,3 +23,18 @@
     width: 34.3rem;
   }
 }
+@media screen and (max-width: 1279px) {
+  .header-inner,
+  .footer-inner,
+  .jobs-inner,
+  .quote-inner {
+    max-width: 900px;
+  }
+  .footer-content-right {
+    padding-top: 33px;
+    padding-left: 82px;
+  }
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+}

@@ -294,3 +294,17 @@ nav ul li a:hover {
     max-width: 1150px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .header-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 900px;
+  }
+  .footer-content-right {
+    padding-top: 33px;
+    padding-left: 82px;
+  }
+  .footer-inner {
+    flex-wrap: wrap;
+  }
+}
