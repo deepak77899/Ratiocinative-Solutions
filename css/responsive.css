@@ -321,6 +321,13 @@
     max-width: 100px;
     max-height: 100px;
   }
+  .colab-right button {
+    width: 40rem;
+    height: 6.9rem;
+  }
+  .colab-right {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 472px) {
   .web-development {
