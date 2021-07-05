@@ -302,10 +302,16 @@
         var nav_sector_options = {
           rootMargin: "-750px 0px 0px 0px",
         };
+        console.log("576");
       }
       if (window.screen.width * window.devicePixelRatio <= "485") {
         var nav_sector_options = {
           rootMargin: "-850px 0px 0px 0px",
+        };
+      }
+      if (window.screen.width * window.devicePixelRatio <= "400") {
+        var nav_sector_options = {
+          rootMargin: "-1000px 0px 0px 0px",
         };
       }
       const nav_sector_Observer = new IntersectionObserver(function (
@@ -315,7 +321,6 @@
         entries.forEach((entry) => {
           if (!entry.isIntersecting) {
             nav.classList.add("nav-active");
-            console.log("yes");
           } else {
             nav.classList.remove("nav-active");
           }
