@@ -21,7 +21,7 @@
             <img src="./images/h-logo.png" alt="logo" class="logo"
           /></a>
           <div class="menu-button">
-            ><img
+            <img
               src="./images/icons8-squared-menu-24(1).png"
               alt="menu button"
               class="menu-btn-img"
@@ -52,8 +52,8 @@
             <ul>
               <li><a href="#">ui/ux web design</a></li>
               <li><a href="#">mobile apps</a></li>
-              <li><a href="#">web development</a></li>
-              <li><a href="#">optimization</a></li>
+              <li class="web-development"><a href="#">web development</a></li>
+              <li class="optimization"><a href="#">optimization</a></li>
             </ul>
           </div>
         </div>
@@ -295,9 +295,19 @@
       const nav = document.querySelector("#nav");
       const nav_sector = document.querySelector(".header-banner");
 
-      const nav_sector_options = {
+      var nav_sector_options = {
         rootMargin: "-650px 0px 0px 0px",
       };
+      if (window.screen.width * window.devicePixelRatio <= "576") {
+        var nav_sector_options = {
+          rootMargin: "-750px 0px 0px 0px",
+        };
+      }
+      if (window.screen.width * window.devicePixelRatio <= "485") {
+        var nav_sector_options = {
+          rootMargin: "-850px 0px 0px 0px",
+        };
+      }
       const nav_sector_Observer = new IntersectionObserver(function (
         entries,
         nav_sector_Observer
@@ -319,9 +329,16 @@
       menu.addEventListener("click", () => {
         let btns = document.querySelector(".nav-button-group");
         btns.classList.toggle("block");
-        let header_banner = document.querySelector(".header-content");
-        header_banner.classList.toggle("visibillity");
       });
+      // function getResolution() {
+      //   alert(
+      //     "Your screen resolution is: " +
+      //       window.screen.width * window.devicePixelRatio +
+      //       "x" +
+      //       window.screen.height * window.devicePixelRatio
+      //   );
+      // }
+      // getResolution();
     </script>
   </body>
 </html>

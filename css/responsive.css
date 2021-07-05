@@ -62,7 +62,7 @@
   .colab-inner,
   .footer-inner,
   .quote-inner {
-    max-width: 900px;
+    max-width: 90%;
   }
   .e-top-right p {
     width: 455px;
@@ -74,34 +74,72 @@
     margin-top: 6.3rem;
     justify-content: space-between;
   }
+  .e-bottom-divs img {
+    max-width: 70px;
+    max-height: 70px;
+  }
+  .expertise-2 {
+    padding-left: 0;
+  }
   .expertise-3 {
     padding-left: 0rem;
-    padding-top: 34px;
   }
   .expertise-5 {
     padding-left: 0rem;
+  }
+  .expertise-6 {
+    padding-left: 0;
   }
   .creates-inner {
     flex-wrap: wrap;
   }
   .creates-img {
-    width: 80%;
+    width: 100%;
     margin: 30px 0;
   }
   .colab-inner {
     flex-wrap: wrap;
   }
   .colab-right {
-    margin-left: 0;
-    margin-top: -67px;
+    margin-left: 61px;
+    margin-top: 94px;
     margin-bottom: 65px;
+  }
+  .colab-left img {
+    width: 46.1rem;
+  }
+  .quote-inner {
+    padding-top: 33px;
+  }
+  .quote h3 {
+    padding-bottom: 64px;
   }
   .footer-content-right {
     padding-top: 33px;
-    padding-left: 82px;
+    padding-left: 17px;
   }
   .footer-inner {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1052px) {
+  .colab-left {
+    width: 100%;
+  }
+  .colab-left img {
+    width: 100%;
+  }
+  .colab-right {
+    margin-left: 26px;
+    margin-top: -25px;
+  }
+  .exc-2 {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 1020px) and (min-width: 992px) {
+  .expertise-4 {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 991px) {
@@ -128,6 +166,20 @@
   .email {
     margin-right: 85px;
   }
+  .quote-inner {
+    padding-top: 26px;
+  }
+  .quote h3 {
+    padding-bottom: 47px;
+  }
+  .exc-2 {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 916px) {
+  .expertise-4 {
+    padding-top: 0;
+  }
 }
 @media screen and (max-width: 760px) {
   .header-content ul {
@@ -146,18 +198,39 @@
   .e-top-right p {
     margin-top: 0.2rem;
   }
-  .e-bottom {
-    flex-direction: column;
+  .e-bottom-divs img {
+    max-width: 60px;
+    max-height: 60px;
   }
   .expertise-2 {
     padding-left: 0;
-    margin-top: 26px;
   }
   .expertise-6 {
     padding-left: 0;
   }
+  .exc-1 {
+    margin-left: 2.9rem;
+  }
+  .exc-2 {
+    margin-left: 3.4rem;
+  }
+  .exc-3 {
+    margin-left: 3.2rem;
+  }
+  .exc-4 {
+    margin-left: 3.5rem;
+  }
+  .exc-5 {
+    margin-left: 2.6rem;
+  }
+  .exc-6 {
+    margin-left: 3rem;
+  }
   .creates-content p {
     width: 502px;
+  }
+  .e-top-right p {
+    width: 100%;
   }
   .arrow,
   .arrow-b {
@@ -181,7 +254,7 @@
     top: 66px;
     background: #f78444;
     display: flex;
-    height: 87vh;
+    height: 49vh;
     width: 100vw;
     align-items: center;
     justify-content: space-evenly;
@@ -197,9 +270,6 @@
     right: 0;
     transition: right 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
-  .visibillity {
-    visibility: hidden;
-  }
   nav ul {
     position: fixed;
     right: -100%;
@@ -207,11 +277,77 @@
     top: 66px;
     background: #f78444;
     display: flex;
-    height: 87vh;
+    height: 49vh;
     width: 100vw;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+  }
+  .creates-img {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .footer-content-right {
+    padding-top: 33px;
+    padding-left: 28px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-content ul {
+    flex-wrap: wrap;
+  }
+  .optimization {
+    padding-top: 20px;
+  }
+  .creates-content {
+    margin-right: 0;
+  }
+  .creates-content p {
+    width: 100%;
+  }
+  .colab-right p {
+    width: 100%;
+  }
+  .logo {
+    margin-left: 1.5rem;
+  }
+}
+@media screen and (max-width: 562px) {
+  .e-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .e-bottom-divs img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+@media screen and (max-width: 472px) {
+  .web-development {
+    padding-top: 20px;
+  }
+  .logo {
+    margin-top: 3rem;
+    max-width: 240px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-inner,
+  .expertise-inner,
+  .creates-inner,
+  .colab-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 94%;
+  }
+}
+@media screen and (max-width: 385px) {
+  .menu-button {
+    margin-right: 30px;
+  }
+  .logo {
+    margin-top: 4rem;
+    max-width: 200px;
   }
 }
 /* min width */

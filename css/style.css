@@ -111,6 +111,7 @@ nav ul li a:hover {
   margin-top: 52px;
   padding-bottom: 115px;
   margin-bottom: 0;
+  /*! flex-wrap: wrap; */
 }
 .header-content ul li a {
   font-size: 1.8rem;
