@@ -20,7 +20,14 @@
           <a href="./index.html">
             <img src="./images/h-logo.png" alt="logo" class="logo"
           /></a>
-          <ul>
+          <div class="menu-button">
+            ><img
+              src="./images/icons8-squared-menu-24(1).png"
+              alt="menu button"
+              class="menu-btn-img"
+            />
+          </div>
+          <ul class="nav-button-group">
             <li><a href="#">about</a></li>
             <li><a href="#">projects</a></li>
             <li><a class="h-careers" href="./career.html">careers</a></li>
@@ -308,6 +315,13 @@
 
       nav_sector_Observer.observe(nav_sector);
       // intersection observer end
+      let menu = document.querySelector(".menu-button");
+      menu.addEventListener("click", () => {
+        let btns = document.querySelector(".nav-button-group");
+        btns.classList.toggle("block");
+        let header_banner = document.querySelector(".header-content");
+        header_banner.classList.toggle("visibillity");
+      });
     </script>
   </body>
 </html>
