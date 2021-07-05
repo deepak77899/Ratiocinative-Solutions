@@ -311,7 +311,12 @@
       }
       if (window.screen.width * window.devicePixelRatio <= "400") {
         var nav_sector_options = {
-          rootMargin: "-950px 0px 0px 0px",
+          rootMargin: "-900px 0px 0px 0px",
+        };
+      }
+      if (window.screen.width * window.devicePixelRatio <= "350") {
+        var nav_sector_options = {
+          rootMargin: "-1000px 0px 0px 0px",
         };
       }
       const nav_sector_Observer = new IntersectionObserver(function (
