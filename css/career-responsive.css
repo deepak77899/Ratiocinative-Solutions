@@ -28,13 +28,51 @@
   .footer-inner,
   .jobs-inner,
   .quote-inner {
-    max-width: 900px;
+    max-width: 90%;
   }
   .footer-content-right {
     padding-top: 33px;
     padding-left: 82px;
   }
+  .quote-inner {
+    padding-top: 33px;
+  }
+  .quote h3 {
+    padding-bottom: 64px;
+  }
+  .footer-content-right {
+    padding-top: 33px;
+    padding-left: 17px;
+  }
   .footer-inner {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 45%;
+  }
+  .header-inner,
+  .expertise-inner,
+  .creates-inner,
+  .colab-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 90%;
+  }
+  .address {
+    margin-right: 76px;
+  }
+  .email {
+    margin-right: 85px;
+  }
+  .quote-inner {
+    padding-top: 26px;
+  }
+  .quote h3 {
+    padding-bottom: 47px;
+  }
+  .exc-2 {
+    margin-left: 40px;
   }
 }
