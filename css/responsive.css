@@ -232,9 +232,12 @@
   .e-top-right p {
     width: 100%;
   }
-  .arrow,
-  .arrow-b {
-    transform: translateY(1.2rem);
+  .colab-right button {
+    width: 352px;
+    height: 66px;
+  }
+  .colab-right button a {
+    font-size: 15px;
   }
   .footer-content-right {
     flex-wrap: wrap;
@@ -245,9 +248,6 @@
     height: 25px;
     margin-top: 40px;
     margin-right: 60px;
-  }
-  nav ul {
-    display: none;
   }
   .block {
     position: fixed;
@@ -268,6 +268,7 @@
   }
   .block {
     right: 0;
+    margin-top: 22px;
     transition: right 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
   nav ul {
@@ -282,6 +283,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-top: 22px;
   }
   .creates-img {
     width: 100%;
@@ -290,6 +292,19 @@
   .footer-content-right {
     padding-top: 33px;
     padding-left: 28px;
+  }
+}
+@media screen and (max-width: 606px) {
+  .header-content ul {
+    flex-wrap: wrap;
+  }
+  .optimization {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 585px) {
+  nav {
+    background: #f78444 !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -322,8 +337,8 @@
     max-height: 100px;
   }
   .colab-right button {
-    width: 40rem;
-    height: 6.9rem;
+    width: 400px;
+    height: 69px;
   }
   .colab-right {
     margin-left: 0;
@@ -337,6 +352,13 @@
     margin-top: 3rem;
     max-width: 240px;
   }
+  .colab-right button {
+    width: 300px;
+    height: 50px;
+  }
+  .colab-right button a {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 400px) {
   .header-inner,
@@ -346,6 +368,10 @@
   .footer-inner,
   .quote-inner {
     max-width: 94%;
+  }
+  .e-bottom-divs img {
+    max-width: 80px;
+    max-height: 80px;
   }
 }
 @media screen and (max-width: 385px) {

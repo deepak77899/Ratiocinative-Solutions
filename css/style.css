@@ -357,7 +357,7 @@ nav ul li a:hover {
   transition: 0.5s ease;
 }
 .colab-right button a {
-  font-size: 1.8rem;
+  font-size: 18px;
   letter-spacing: 0px;
   line-height: 3.6rem;
   color: #ffffff;
@@ -366,6 +366,9 @@ nav ul li a:hover {
   text-align: center;
   transition: 0.5s ease;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .colab-right button:hover,
 .colab-right button a:hover {
@@ -385,8 +388,7 @@ nav ul li a:hover {
 }
 .arrow,
 .arrow-b {
-  margin-left: 6px;
-  transform: translateY(0.6rem);
+  margin-left: 11px;
 }
 .colab-right button:hover .arrow,
 .colab-right button a:hover .arrow {
