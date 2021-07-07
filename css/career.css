@@ -75,6 +75,50 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
 }
+.hamburger-menu {
+  /*! width: 15.5px; */
+  /*! height: 15px; */
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+.bar {
+  position: relative;
+  width: 23.5px;
+  height: 3px;
+  background-color: #fd8200;
+  border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 23.5px;
+  height: 3px;
+  background-color: #fd8200;
+  border-radius: 2px;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before {
+  transform: translateY(-8px);
+}
+.bar::after {
+  transform: translateY(8px);
+}
+/* bar animation */
+.hamburger-menu.open .bar {
+  transform: translateX(-10px);
+  background: transparent;
+}
+.hamburger-menu.open .bar::before {
+  transform: rotate(45deg) translate(8px, -8px);
+}
+.hamburger-menu.open .bar::after {
+  transform: rotate(-45deg) translate(8px, 8px);
+}
 .header-content h2 {
   font-size: 1.6rem;
   letter-spacing: 0px;
@@ -349,7 +393,7 @@ nav ul li a:hover {
   background-color: #fd8200;
   position: absolute;
   left: -11px;
-  top: 26px;
+  top: 2.6rem;
 }
 .address p,
 .email p,
