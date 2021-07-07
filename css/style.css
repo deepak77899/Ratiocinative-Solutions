@@ -40,7 +40,7 @@ nav {
   z-index: 1000;
 }
 .nav-active {
-  background: #f78444 !important;
+  background: #fd8200 !important;
 }
 nav ul {
   display: flex;
@@ -195,6 +195,8 @@ nav ul li a:hover {
   line-height: 3.6rem;
   color: #000000;
   font-weight: 400;
+  position: relative;
+  padding-left: 17px;
 }
 .ex-content li::before {
   content: "\2022";
@@ -204,6 +206,9 @@ nav ul li a:hover {
   width: 1em;
   /* margin-left: -1em; */
   font-size: 24px;
+  position: absolute;
+  left: -3px;
+  top: -1px;
 }
 .e-bottom-divs img {
   max-height: 100px;

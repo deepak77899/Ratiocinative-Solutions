@@ -48,6 +48,12 @@
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1216px) {
+  .header-banner-svg {
+    width: 49.2rem;
+    height: 27.2rem;
+  }
+}
 @media screen and (max-width: 991px) {
   html {
     font-size: 45%;
@@ -74,5 +80,64 @@
   }
   .exc-2 {
     margin-left: 40px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .header-banner-svg {
+    width: 49.2rem;
+    height: 27.2rem;
+  }
+  .header-content h2 {
+    font-size: 1.3rem;
+    line-height: 3.6rem;
+  }
+  .header-content h1 {
+    font-size: 4.4rem;
+    line-height: 7rem;
+  }
+  .header-content p {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  .header-inner {
+    padding-top: 18px;
+  }
+}
+@media screen and (max-width: 850px) and (min-width: 810px) {
+  .header-inner {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+}
+@media screen and (max-width: 723px) {
+  html {
+    font-size: 40%;
+  }
+  .header-inner {
+    padding-top: 56px;
+    padding-bottom: 45px;
+  }
+}
+@media screen and (max-width: 643px) {
+  .header-banner-svg {
+    width: 41.2rem;
+    height: 24.2rem;
+  }
+}
+@media screen and (max-width: 593px) {
+  .header-inner {
+    padding-top: 56px;
+    padding-bottom: 45px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-content h2 {
+    padding-top: 142px;
+  }
+  .header-content p {
+    margin-bottom: 72px;
+  }
+  .header-banner-svg {
+    margin-top: 0;
   }
 }
