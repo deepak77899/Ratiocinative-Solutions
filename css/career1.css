@@ -38,6 +38,7 @@ nav {
   /* background-size: auto; */
   /* background-size: cover; */
   z-index: 1000;
+  background: white;
 }
 .nav-active {
   background: white;
@@ -63,89 +64,166 @@ nav ul li a:hover {
 }
 .h-careers {
   margin-right: 5rem;
-  /* color: #fd8200; */
+  color: #fd8200;
 }
 .logo {
   margin-left: 4.5rem;
   margin-top: 2rem;
 }
 .header-inner {
-  max-width: 1400px;
+  max-width: 1150px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
+.hamburger-menu {
+  /*! width: 15.5px; */
+  /*! height: 15px; */
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+.bar {
+  position: relative;
+  width: 23.5px;
+  height: 3px;
+  background-color: #fd8200;
+  border-radius: 2px;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before,
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 23.5px;
+  height: 3px;
+  background-color: #fd8200;
+  border-radius: 2px;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before {
+  transform: translateY(-8px);
+}
+.bar::after {
+  transform: translateY(8px);
+}
+/* bar animation */
+.hamburger-menu.open .bar {
+  transform: translateX(-10px);
+  background: transparent;
+}
+.hamburger-menu.open .bar::before {
+  transform: rotate(45deg) translate(8px, -8px);
+}
+.hamburger-menu.open .bar::after {
+  transform: rotate(-45deg) translate(8px, 8px);
+}
+.job-head {
+  background: black;
+  margin-top: 100px;
+  position: fixed;
+  width: 100%;
+  /*! z-index: 1001; */
+}
+.job-head h3 a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.job-head h3 a i {
+  padding-right: 10px;
+}
+.jobs-headleft h3 a:hover {
+  color: #fd8200;
+  transition: 0.5s ease;
+}
+.job-head h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 21px;
+}
+.jobs-headleft {
+  padding-top: 22px;
+  padding-bottom: 54px;
+}
+.job-head-loc span {
+  font-size: 22px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: white;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.job-head-loc a {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: white;
+  font-weight: 400;
+  font-family: "Montserrat";
+  transition: 0.5s ease;
+}
+.jobs-headinner {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jobs-headright a {
+  padding: 10px 29px;
+  background: #fff;
+  text-decoration: none;
+  color: #000;
+  font-size: 2.2rem;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.jobs-headright a:hover {
+  background: #fd8200;
+  transition: 0.5s ease;
+}
+.job-head-loc a:hover {
+  color: #fd8200;
+  transition: 0.5s ease;
+}
 .header-banner {
-  margin-top: 173px;
-}
-.career h2 {
-  font-size: 24px;
-  letter-spacing: 0px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 400;
-}
-.career h3 {
-  font-size: 18px;
-  letter-spacing: 0px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 400;
-}
-.career h3 {
-  font-size: 18px;
-  letter-spacing: 0px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 400;
-}
-.career p {
-  font-size: 14px;
-  letter-spacing: 0px;
-  line-height: 29px;
-  color: #000000;
-  font-weight: 400;
-  max-width: 100%;
+  margin-top: 367px;
 }
 .career {
-  width: 50%;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid grey;
-  border-radius: 5px;
-  padding: 0 40px 0;
   margin-bottom: 50px;
 }
-.career button {
-  width: 116px;
-  height: 39px;
-  /*! border-radius: 8px; */
-  background-color: #fd8200;
-  margin-top: 32px;
-  border: 3px solid #fd8200;
-  transition: 0.5s ease;
-  margin-bottom: 20px;
-}
-.career button a {
-  font-size: 1.2rem;
+.c-p1,
+.c-p2 {
+  font-size: 2rem;
   letter-spacing: 0px;
-  line-height: 3.6rem;
-  color: #ffffff;
-  font-weight: 900;
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  transition: 0.5s ease;
-  text-transform: uppercase;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Montserrat";
 }
-.career button:hover,
-.career button a:hover {
-  background: transparent;
-  color: black;
-  transition: 0.5s ease;
+.career h2 {
+  margin-top: 25px;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  letter-spacing: 0px;
 }
-.career button:hover a {
-  color: black;
-  transition: 0.5s ease;
+.career ul li {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.career ul {
+  list-style-type: square;
+  padding-left: 17px;
 }
 /* quote section start */
 .quote {
@@ -278,11 +356,6 @@ nav ul li a:hover {
   html {
     font-size: 58%;
   }
-  .header-inner,
-  .footer-inner,
-  .quote-inner {
-    max-width: 1300px;
-  }
 }
 @media screen and (max-width: 1400px) {
   html {
@@ -290,21 +363,128 @@ nav ul li a:hover {
   }
   .header-inner,
   .footer-inner,
-  .quote-inner {
-    max-width: 1150px;
+  .quote-inner,
+  .jobs-headinner {
+    max-width: 1050px;
   }
 }
 @media screen and (max-width: 1279px) {
   .header-inner,
   .footer-inner,
+  .quote-inner,
+  .jobs-headinner {
+    max-width: 90%;
+  }
   .quote-inner {
-    max-width: 900px;
+    padding-top: 33px;
+  }
+  .quote h3 {
+    padding-bottom: 64px;
   }
   .footer-content-right {
-    padding-top: 33px;
-    padding-left: 82px;
+    padding-top: 100px;
+    padding-left: 17px;
   }
   .footer-inner {
     flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-inner,
+  .footer-inner,
+  .quote-inner,
+  .jobs-headinner {
+    max-width: 90%;
+  }
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .address {
+    margin-right: 76px;
+  }
+  .email {
+    margin-right: 85px;
+  }
+  .quote-inner {
+    padding-top: 26px;
+  }
+  .quote h3 {
+    padding-bottom: 47px;
+  }
+}
+@media screen and (max-width: 967px) {
+  .footer-content-right {
+    padding-top: 38px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer-content-right {
+    padding-top: 33px;
+    padding-left: 28px;
+  }
+  .footer-content-right {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 614px) {
+  .jobs-headinner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .jobs-headright {
+    padding-bottom: 41px;
+  }
+  .header-banner {
+    margin-top: 409px;
+  }
+}
+@media screen and (max-width: 643px) {
+  nav ul {
+    display: flex;
+    position: absolute;
+    height: 49vh;
+    flex-direction: column;
+    align-items: center;
+    width: 92%;
+    justify-content: space-evenly;
+    background: white;
+    top: 100px;
+    left: 150%;
+    transform: translateX(-50%);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  .hamburger-menu {
+    margin-right: 70px;
+    display: flex;
+  }
+}
+@media screen and (max-width: 593px) {
+  .logo {
+    max-width: 200px;
+  }
+  .job-head {
+    margin-top: 74px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-inner,
+  .footer-inner,
+  .quote-inner,
+  .jobs-headinner {
+    max-width: 94%;
+  }
+  .hamburger-menu {
+    margin-right: 33px;
+    margin-top: 9px;
+  }
+  .logo {
+    max-width: 165px;
+  }
+
+  nav ul {
+    width: 94%;
   }
 }

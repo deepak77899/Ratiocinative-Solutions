@@ -20,44 +20,88 @@
           <a href="./index.html">
             <img src="./images/c-logo.png" alt="logo" class="logo"
           /></a>
-          <ul>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
             <li><a href="#">about</a></li>
             <li><a href="#">projects</a></li>
             <li><a class="h-careers" href="./career.html">careers</a></li>
           </ul>
         </nav>
       </div>
+      <div class="job-head">
+        <div class="jobs-headinner">
+          <div class="jobs-headleft">
+            <h3>
+              <a href="./career.html"
+                ><i class="fas fa-arrow-left"></i>Careers</a
+              >
+            </h3>
+            <h2>Senior Front-End Developer</h2>
+            <div class="job-head-loc">
+              <a href="./career1.html">MOHALI, PUNJAB</a>
+              <span>|</span> <a href="./career1.html">FULL TIME</a>
+              <a href="./career1.html"></a>
+            </div>
+          </div>
+          <div class="jobs-headright"><a href="#">Apply Now</a></div>
+        </div>
+      </div>
       <div class="header-banner">
         <div class="header-inner">
           <div class="career">
-            <h2>Front End Developer</h2>
-            <h3>Job Description</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
-              veritatis eius provident a alias! Quae veritatis, incidunt
-              voluptatibus magni dicta alias quia!
+            <p class="c-p1">
+              We are looking for a Senior front-end web Developer to join our
+              Engineering team. This position will play an important role in
+              driving growth and user engagement through delightful user
+              experiences.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
-              veritatis eius provident a alias! Quae veritatis, incidunt
-              voluptatibus magni dicta alias quia!
+            <p class="c-p2">
+              A front-end web developer is responsible for implementing visual
+              and interactive elements that users engage with through their web
+              browser when using a web application. ... A front-end web
+              developer is responsible for implementing visual elements that
+              users see and interact with in a web application.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
-              veritatis eius provident a alias! Quae veritatis, incidunt
-              voluptatibus magni dicta alias quia! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit. Odit, temporibus.
-            </p>
-            <!-- <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              aspernatur, placeat, ducimus ullam veniam non sequi mollitia
-              veritatis eius provident a alias! Quae veritatis, incidunt
-              voluptatibus magni dicta alias quia!
-            </p> -->
-            <button><a href="#">Apply Now</a></button>
+            <h2>Job Responsibilities:</h2>
+            <ul>
+              <li>
+                Contribute to the overall architecture design and specification
+                of next generation Social interface of our CRM platform
+              </li>
+              <li>
+                Focus on scalability and building robust scalable systems using
+                the cutting edge developments in Social Networks.
+              </li>
+              <li>Should know the architecture of WordPress</li>
+              <li>
+                Taking ownership and initiatives in building innovative products
+                providing seamless experience to the end user.
+              </li>
+              <li>
+                Strong Coding skills with Understanding of Object Oriented
+                Programming and MVC design patterns frameworks are a must.
+              </li>
+              <li>
+                Strong Coding skills with Understanding of Object Oriented
+                Programming and MVC design patterns frameworks are a must.
+              </li>
+              <li>
+                Energetic, driven, self-starter with high levels of initiative
+              </li>
+            </ul>
+            <h2>Education & Experience:</h2>
+            <ul>
+              <li>
+                3-5 years of experience front end, Mobile Apps, consumer,
+                commercial, and enterprise web applications.
+              </li>
+              <li>
+                The developer should have Outstanding communication skills with
+                the ability to explain ideas and concepts to the client.]
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -101,30 +145,50 @@
       </div>
     </div>
     <script>
-      // intersection observer start
-      const nav = document.querySelector("#nav");
-      const nav_sector = document.querySelector(".header-banner");
+      // // intersection observer start
+      // const nav = document.querySelector("#nav");
+      // const nav_sector = document.querySelector(".header-banner");
 
-      const nav_sector_options = {
-        rootMargin: "-645px 0px 0px 0px",
-      };
-      const nav_sector_Observer = new IntersectionObserver(function (
-        entries,
-        nav_sector_Observer
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            nav.classList.add("nav-active");
-            console.log("yes");
-          } else {
-            nav.classList.remove("nav-active");
-          }
-        });
-      },
-      nav_sector_options);
+      // const nav_sector_options = {
+      //   rootMargin: "-645px 0px 0px 0px",
+      // };
+      // const nav_sector_Observer = new IntersectionObserver(function (
+      //   entries,
+      //   nav_sector_Observer
+      // ) {
+      //   entries.forEach((entry) => {
+      //     if (!entry.isIntersecting) {
+      //       nav.classList.add("nav-active");
+      //       console.log("yes");
+      //     } else {
+      //       nav.classList.remove("nav-active");
+      //     }
+      //   });
+      // },
+      // nav_sector_options);
 
-      nav_sector_Observer.observe(nav_sector);
-      // intersection observer end
+      // nav_sector_Observer.observe(nav_sector);
+      // // intersection observer end
+      // open menu start
+      const ham = document.querySelector(".hamburger-menu");
+      let menuOpen = false;
+
+      ham.addEventListener("click", () => {
+        if (!menuOpen) {
+          ham.classList.add("open");
+          menuOpen = true;
+          document.querySelector(".menu").style.left = "50%";
+          // document.querySelector(".content").style.display = "none";
+          // document.querySelector(".number").style.left = "-15%";
+        } else {
+          ham.classList.remove("open");
+          menuOpen = false;
+          document.querySelector(".menu").style.left = "150%";
+          // document.querySelector(".menu").style.right = "-90%";
+          // document.querySelector(".content").style.display = "block";
+        }
+      });
+      // open menu end
     </script>
   </body>
 </html>
