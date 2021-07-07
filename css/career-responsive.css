@@ -262,9 +262,12 @@
     font-size: 1.4rem;
   }
   nav ul {
-    width: 92%;
+    width: 94%;
   }
   .header-content h2 {
     padding-top: 98px;
+  }
+  .header-inner {
+    padding-bottom: 46px;
   }
 }
