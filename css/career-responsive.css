@@ -8,6 +8,9 @@
   .quote-inner {
     max-width: 1300px;
   }
+  .acc-jobs {
+    width: 36.3rem;
+  }
 }
 @media screen and (max-width: 1400px) {
   html {
@@ -20,7 +23,7 @@
     max-width: 1150px;
   }
   .acc-jobs {
-    width: 34.3rem;
+    width: 33rem;
   }
 }
 @media screen and (max-width: 1279px) {
@@ -47,11 +50,24 @@
   .footer-inner {
     flex-wrap: wrap;
   }
+  .acc-jobs {
+    width: 30rem;
+  }
 }
 @media screen and (max-width: 1216px) {
   .header-banner-svg {
     width: 49.2rem;
     height: 27.2rem;
+  }
+}
+@media screen and (max-width: 1182px) {
+  .acc-jobs {
+    width: 39%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .acc-jobs {
+    width: 39%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -82,6 +98,20 @@
     margin-left: 40px;
   }
 }
+@media screen and (max-width: 967px) {
+  .footer-content-right {
+    padding-top: 38px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .footer-content-right {
+    padding-top: 33px;
+    padding-left: 28px;
+  }
+  .footer-content-right {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 850px) {
   .header-banner-svg {
     width: 49.2rem;
@@ -107,6 +137,20 @@
   .header-inner {
     padding-top: 50px;
     padding-bottom: 45px;
+  }
+}
+@media screen and (max-width: 805px) {
+  .acc-jobs {
+    width: 38%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .acc-jobs {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .acc-content {
+    padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 723px) {
@@ -139,5 +183,28 @@
   }
   .header-banner-svg {
     margin-top: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  .openings {
+    font-size: 1.8rem;
+    line-height: 36px;
+    width: 16rem;
+    height: 4.9rem;
+    border-radius: 0.8rem;
+  }
+  .acc .label h2 {
+    font-size: 2.7rem;
+    line-height: 5rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header-inner,
+  .expertise-inner,
+  .creates-inner,
+  .colab-inner,
+  .footer-inner,
+  .quote-inner {
+    max-width: 94%;
   }
 }
