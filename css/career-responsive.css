@@ -223,6 +223,21 @@
     max-width: 200px;
   }
 }
+@media screen and (max-width: 450px) {
+  .label {
+    flex-direction: column;
+  }
+  .acc .label h2 {
+    padding-top: 12px;
+    padding-bottom: 16px;
+  }
+  .openings {
+    margin-bottom: 12px;
+  }
+  .header-banner-svg {
+    transform: translateX(-27px);
+  }
+}
 @media screen and (max-width: 400px) {
   .header-inner,
   .expertise-inner,
