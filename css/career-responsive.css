@@ -261,4 +261,10 @@
   .acc-jobs-bottom a {
     font-size: 1.4rem;
   }
+  nav ul {
+    width: 92%;
+  }
+  .header-content h2 {
+    padding-top: 98px;
+  }
 }
