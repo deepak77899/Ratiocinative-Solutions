@@ -21,7 +21,7 @@ ul {
 }
 .super-wrapper {
   width: 100%;
-  overflow-x: hidden;
+  /*! overflow-x: hidden; */
 }
 .header-banner {
   width: 100%;
@@ -30,7 +30,7 @@ ul {
 }
 nav {
   display: flex;
-  position: fixed;
+  /*! position: fixed; */
   width: 100%;
   top: 0;
   justify-content: space-between;
@@ -122,10 +122,11 @@ nav ul li a:hover {
 }
 .job-head {
   background: black;
-  margin-top: 100px;
-  position: fixed;
+  /*! margin-top: 100px; */
+  position: sticky;
   width: 100%;
   /*! z-index: 1001; */
+  top: 0;
 }
 .job-head h3 a {
   font-size: 1.8rem;
@@ -192,7 +193,7 @@ nav ul li a:hover {
   transition: 0.5s ease;
 }
 .header-banner {
-  margin-top: 367px;
+  margin-top: 62px;
 }
 .career {
   margin-left: auto;
@@ -437,7 +438,7 @@ nav ul li a:hover {
     padding-bottom: 41px;
   }
   .header-banner {
-    margin-top: 409px;
+    margin-top: 38px;
   }
 }
 @media screen and (max-width: 643px) {
@@ -455,6 +456,7 @@ nav ul li a:hover {
     transform: translateX(-50%);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: 10;
   }
   .hamburger-menu {
     margin-right: 70px;
@@ -464,9 +466,6 @@ nav ul li a:hover {
 @media screen and (max-width: 593px) {
   .logo {
     max-width: 200px;
-  }
-  .job-head {
-    margin-top: 74px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -486,8 +485,5 @@ nav ul li a:hover {
 
   nav ul {
     width: 94%;
-  }
-  .job-head {
-    margin-top: 64px;
   }
 }
