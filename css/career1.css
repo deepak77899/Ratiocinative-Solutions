@@ -452,7 +452,7 @@ nav ul li a:hover {
     justify-content: space-evenly;
     background: white;
     top: 100px;
-    left: 150%;
+    left: -150%;
     transform: translateX(-50%);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
