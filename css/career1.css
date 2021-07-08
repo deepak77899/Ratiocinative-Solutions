@@ -487,4 +487,7 @@ nav ul li a:hover {
   nav ul {
     width: 94%;
   }
+  .job-head {
+    margin-top: 64px;
+  }
 }
