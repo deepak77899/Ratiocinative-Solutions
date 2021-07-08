@@ -67,10 +67,10 @@ nav ul li a:hover {
   display: block;
 }
 .h-careers {
-  margin-right: 5rem;
+  margin-right: 43px;
 }
 .logo {
-  margin-left: 4.5rem;
+  margin-left: 4.2rem;
   margin-top: 2rem;
 }
 .header-inner {
@@ -94,13 +94,14 @@ nav ul li a:hover {
   color: #ffffff;
   font-weight: 700;
   margin-top: -7px;
-  max-width: 994px;
+  max-width: 1003px;
 }
 .header-content h1 strong {
   display: inline-block;
   animation: flips 3s infinite;
   animation-delay: 0s;
   animation-delay: calc(0.2s * var(--i));
+  /*! letter-spacing: 4px; */
 }
 @keyframes flips {
   0% {
@@ -123,7 +124,7 @@ nav ul li a:hover {
   display: flex;
   padding-left: 0;
   margin-top: 52px;
-  padding-bottom: 115px;
+  padding-bottom: 122px;
   margin-bottom: 0;
   /*! flex-wrap: wrap; */
 }
