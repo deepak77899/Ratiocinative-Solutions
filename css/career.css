@@ -209,6 +209,7 @@ nav ul li a:hover {
 }
 .acc.acc-active .label {
   background-color: #f9f9f9;
+  transition: 0.5s ease;
 }
 .acc-jobs h3 a {
   font-size: 16px;
@@ -240,6 +241,9 @@ nav ul li a:hover {
   margin-top: 30px;
   transition: 0.4s ease;
   margin-right: 1.9rem;
+  transform: scale(0);
+  transform-origin: top;
+  transition: 0.5s ease;
 }
 .acc-jobs:hover {
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
@@ -259,6 +263,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s ease;
 }
 .acc-1 .label {
   border-top: 1px solid #c0c0c0;
@@ -286,9 +291,15 @@ nav ul li a:hover {
   margin-right: 20px;
   border: none;
   cursor: pointer;
+  transition: 0.5s ease;
+}
+.acc.acc-active .acc-content .acc-jobs {
+  transform: scale(1);
+  transition: 0.5s ease;
 }
 .acc.acc-active .openings {
   background-color: #ffffff;
+  transition: 0.5s ease;
 }
 .acc-jobs-bottom i {
   font-size: 21px;
