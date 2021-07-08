@@ -96,6 +96,20 @@ nav ul li a:hover {
   margin-top: -7px;
   max-width: 994px;
 }
+.header-content h1 strong {
+  display: inline-block;
+  animation: flips 3s infinite;
+  animation-delay: 0s;
+  animation-delay: calc(0.2s * var(--i));
+}
+@keyframes flips {
+  0% {
+    transform: rotateY(360deg);
+  }
+  80% {
+    transform: rotateY(360deg);
+  }
+}
 .header-content p {
   max-width: 1266px;
   height: 91px;

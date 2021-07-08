@@ -348,6 +348,18 @@
   .colab-right {
     margin-left: 0;
   }
+  .expertise-2 {
+    padding-top: 89px;
+  }
+  .expertise-3 {
+    padding-top: 51px;
+  }
+  .expertise-4 {
+    padding-top: 55px;
+  }
+  .ex-content {
+    padding-left: 83px;
+  }
 }
 @media screen and (max-width: 472px) {
   .web-development {
@@ -377,6 +389,9 @@
   .e-bottom-divs img {
     max-width: 80px;
     max-height: 80px;
+  }
+  .ex-content {
+    padding-left: 30px;
   }
 }
 @media screen and (max-width: 385px) {
