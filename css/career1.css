@@ -127,6 +127,7 @@ nav ul li a:hover {
   width: 100%;
   /*! z-index: 1001; */
   top: 0;
+  background: url("../images/header-banner.png");
 }
 .job-head h3 a {
   font-size: 1.8rem;
@@ -185,8 +186,9 @@ nav ul li a:hover {
   transition: 0.5s ease;
 }
 .jobs-headright a:hover {
-  background: #fd8200;
+  background: black;
   transition: 0.5s ease;
+  color: white;
 }
 .job-head-loc a:hover {
   color: #fd8200;
