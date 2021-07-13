@@ -31,7 +31,7 @@ ul {
 nav {
   display: flex;
   /*! position: fixed; */
-  width: 100%;
+  max-width: 1498px;
   top: 0;
   justify-content: space-between;
   /* background: url("../images/header-banner.png"); */
@@ -39,6 +39,7 @@ nav {
   /* background-size: cover; */
   z-index: 1000;
   background: white;
+  margin: 0 auto;
 }
 .nav-active {
   background: white;
@@ -137,6 +138,7 @@ nav ul li a:hover {
 }
 .job-head h3 a i {
   padding-right: 10px;
+  padding-left: 5px;
 }
 .jobs-headleft h3 a:hover {
   color: black;
@@ -224,6 +226,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
   font-weight: 400;
   letter-spacing: 0px;
+  line-height: 23px;
 }
 .career ul {
   list-style-type: disc;
@@ -485,7 +488,6 @@ nav ul li a:hover {
   .logo {
     max-width: 165px;
   }
-
   nav ul {
     width: 94%;
   }
