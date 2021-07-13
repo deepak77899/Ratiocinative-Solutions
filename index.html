@@ -21,14 +21,10 @@
           <a href="./index.html">
             <img src="./images/h-logo.png" alt="logo" class="logo"
           /></a>
-          <div class="menu-button">
-            <img
-              src="./images/icons8-squared-menu-24(1).png"
-              alt="menu button"
-              class="menu-btn-img"
-            />
+          <div class="hamburger-menu">
+            <div class="bar"></div>
           </div>
-          <ul class="nav-button-group">
+          <ul class="nav-button-group menu">
             <li><a href="#">about</a></li>
             <li><a href="#">projects</a></li>
             <li><a class="h-careers" href="./career.html">careers</a></li>
@@ -296,6 +292,26 @@
       </div>
     </div>
     <script>
+      // open menu start
+      const ham = document.querySelector(".hamburger-menu");
+      let menuOpen = false;
+
+      ham.addEventListener("click", () => {
+        if (!menuOpen) {
+          ham.classList.add("open");
+          menuOpen = true;
+          document.querySelector(".menu").style.left = "50%";
+          // document.querySelector(".content").style.display = "none";
+          // document.querySelector(".number").style.left = "-15%";
+        } else {
+          ham.classList.remove("open");
+          menuOpen = false;
+          document.querySelector(".menu").style.left = "-150%";
+          // document.querySelector(".menu").style.right = "-90%";
+          // document.querySelector(".content").style.display = "block";
+        }
+      });
+      // open menu end
       // intersection observer start
       const nav = document.querySelector("#nav");
       const nav_sector = document.querySelector(".header-banner");
