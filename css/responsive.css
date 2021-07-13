@@ -315,6 +315,9 @@
     padding-top: 33px;
     padding-left: 28px;
   }
+  .header-content h1 {
+    line-height: 6rem;
+  }
 }
 @media screen and (max-width: 746px) {
   .header-content h1 {

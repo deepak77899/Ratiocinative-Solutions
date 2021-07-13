@@ -155,6 +155,10 @@ nav ul li a:hover {
     transform: rotateY(360deg);
   }
 }
+.scaling,
+.transforming {
+  display: inline-block;
+}
 .header-content p {
   max-width: 1266px;
   height: 91px;
