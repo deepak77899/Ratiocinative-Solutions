@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/career1.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/5d32f818d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ratiocinative Solutions</title>
+  </head>
+  <body>
+    <div class="super-wrapper">
+      <div class="header">
+        <nav id="nav">
+          <a href="./index.html">
+            <img src="./images/c-logo.png" alt="logo" class="logo"
+          /></a>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li><a href="#">about</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a class="h-careers" href="./career.html">careers</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="job-head">
+        <div class="jobs-headinner">
+          <div class="jobs-headleft">
+            <h3>
+              <a href="./career.html"
+                ><i class="fas fa-arrow-left"></i>Careers</a
+              >
+            </h3>
+            <h2>PHP Developer</h2>
+            <div class="job-head-loc">
+              <a href="./career1.html">MOHALI, PUNJAB</a>
+              <span>|</span> <a href="./career1.html">FULL TIME</a>
+              <a href="./career1.html"></a>
+            </div>
+          </div>
+          <div class="jobs-headright"><a href="#">Apply Now</a></div>
+        </div>
+      </div>
+      <div class="header-banner">
+        <div class="header-inner">
+          <div class="career">
+            <p class="c-p1">
+              We are looking for a PHP Developer to join our Engineering team.
+              This position will play an important role in driving growth and
+              user engagement through delightful user experiences.
+            </p>
+            <p class="c-p2">
+              A PHP Developer is responsible for creating and implementing an
+              array of Web-based products using PHP, MySQL, Ajax, and
+              JavaScript. You develop back-end components, connect the
+              application with other web services, and assist front-end
+              developers by ensuring their work integrates with the application
+            </p>
+            <h2>Job Responsibilities:</h2>
+            <ul>
+              <li>Experience with Php, Javascript and jQuery</li>
+              <li>Knowledge of Laravel 5.</li>
+              <li>Knowledge of one JS framework(AngularJS, VueJS etc).</li>
+              <li>Knowledge of Solid Programming Principles.</li>
+              <li>Knowledge of Git.</li>
+              <li>Knowledge of Trello, JIRA etc.</li>
+            </ul>
+            <h2>Education & Experience:</h2>
+            <ul>
+              <li>
+                2+ years of experience backend, Mobile Apps, consumer,
+                commercial, and enterprise web applications.
+              </li>
+              <li>
+                The developer should have Outstanding communication skills with
+                the ability to explain ideas and concepts to the client.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-inner">
+          <div class="f-logo">
+            <a href="#"><img src="./images/c-f-logo.png" alt="logo" /></a>
+          </div>
+          <div class="footer-content-right">
+            <div class="address">
+              <h2>Address</h2>
+              <p>
+                <a href="#">
+                  A-606 Bestech Business <br />
+                  Towers,Sector 66,Mohali</a
+                >
+              </p>
+            </div>
+            <div class="email">
+              <h2>Email</h2>
+              <p><a href="#"> info@ratiocinativesolutions.com</a></p>
+            </div>
+            <div class="phone">
+              <h2>Phone</h2>
+              <p><a href="#"> 0172 29 70 873</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <h4>Copyright &copy; 2021 Ratiocinative Solutions</h4>
+        </div>
+      </div>
+    </div>
+    <script>
+      // // intersection observer start
+      // const nav = document.querySelector("#nav");
+      // const nav_sector = document.querySelector(".header-banner");
+
+      // const nav_sector_options = {
+      //   rootMargin: "-645px 0px 0px 0px",
+      // };
+      // const nav_sector_Observer = new IntersectionObserver(function (
+      //   entries,
+      //   nav_sector_Observer
+      // ) {
+      //   entries.forEach((entry) => {
+      //     if (!entry.isIntersecting) {
+      //       nav.classList.add("nav-active");
+      //       console.log("yes");
+      //     } else {
+      //       nav.classList.remove("nav-active");
+      //     }
+      //   });
+      // },
+      // nav_sector_options);
+
+      // nav_sector_Observer.observe(nav_sector);
+      // // intersection observer end
+      // open menu start
+      const ham = document.querySelector(".hamburger-menu");
+      let menuOpen = false;
+
+      ham.addEventListener("click", () => {
+        if (!menuOpen) {
+          ham.classList.add("open");
+          menuOpen = true;
+          document.querySelector(".menu").style.left = "50%";
+          // document.querySelector(".content").style.display = "none";
+          // document.querySelector(".number").style.left = "-15%";
+        } else {
+          ham.classList.remove("open");
+          menuOpen = false;
+          document.querySelector(".menu").style.left = "-150%";
+          // document.querySelector(".menu").style.right = "-90%";
+          // document.querySelector(".content").style.display = "block";
+        }
+      });
+      // open menu end
+    </script>
+  </body>
+</html>

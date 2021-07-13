@@ -139,7 +139,7 @@ nav ul li a:hover {
   padding-right: 10px;
 }
 .jobs-headleft h3 a:hover {
-  color: #fd8200;
+  color: black;
   transition: 0.5s ease;
 }
 .job-head h2 {
@@ -191,7 +191,7 @@ nav ul li a:hover {
   color: white;
 }
 .job-head-loc a:hover {
-  color: #fd8200;
+  color: black;
   transition: 0.5s ease;
 }
 .header-banner {
@@ -225,7 +225,7 @@ nav ul li a:hover {
   letter-spacing: 0px;
 }
 .career ul {
-  list-style-type: square;
+  list-style-type: disc;
   padding-left: 17px;
 }
 /* quote section start */
