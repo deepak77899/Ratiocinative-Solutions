@@ -20,8 +20,10 @@
     padding-left: 13.9rem;
   }
   .expertise-5 {
-    padding-left: 12.4rem;
-    padding-top: 45px;
+    padding-left: 12rem;
+  }
+  .expertise-6 {
+    padding-left: 16.2rem;
   }
   .creates-content {
     margin-right: 94px;
@@ -40,16 +42,16 @@
     max-width: 1150px;
   }
   .expertise-2 {
-    padding-left: 8.2rem;
+    padding-left: 7.2rem;
   }
   .expertise-3 {
-    padding-left: 6.9rem;
+    padding-left: 5.6rem;
   }
   .expertise-5 {
-    padding-left: 7.4rem;
+    padding-left: 6.4rem;
   }
   .expertise-6 {
-    padding-left: 7rem;
+    padding-left: 6rem;
   }
   .colab-right p {
     width: 481px;
@@ -63,6 +65,9 @@
   .footer-inner,
   .quote-inner {
     max-width: 90%;
+  }
+  html {
+    font-size: 50%;
   }
   .e-top-right p {
     width: 455px;
@@ -122,6 +127,11 @@
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1086px) {
+  .e-bottom-divs {
+    width: 33%;
+  }
+}
 @media screen and (max-width: 1052px) {
   .colab-left {
     width: 100%;
@@ -137,11 +147,6 @@
     margin-left: 40px;
   }
 }
-@media screen and (max-width: 1020px) and (min-width: 992px) {
-  .expertise-4 {
-    padding-top: 0;
-  }
-}
 @media screen and (max-width: 991px) {
   html {
     font-size: 45%;
@@ -154,11 +159,17 @@
   .quote-inner {
     max-width: 90%;
   }
+  .e-bottom-divs {
+    width: 50%;
+  }
   .e-top-left {
     margin-right: 50px;
   }
   .e-top-right p {
     width: 380px;
+  }
+  .expertise-3 {
+    padding-top: 40px;
   }
   .address {
     margin-right: 76px;
@@ -179,11 +190,6 @@
 @media screen and (max-width: 967px) {
   .footer-content-right {
     padding-top: 38px;
-  }
-}
-@media screen and (max-width: 916px) {
-  .expertise-4 {
-    padding-top: 0;
   }
 }
 @media screen and (max-width: 760px) {
@@ -336,6 +342,9 @@
   .e-bottom {
     flex-direction: column;
     align-items: center;
+  }
+  .e-bottom-divs {
+    width: 100%;
   }
   .e-bottom-divs img {
     max-width: 100px;

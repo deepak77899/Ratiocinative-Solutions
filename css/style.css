@@ -204,7 +204,7 @@ nav ul li a:hover {
   font-weight: 700;
 }
 .ex-content ul li {
-  /*! width: 201px; */
+  width: 202px;
   font-size: 1.6rem;
   letter-spacing: 0px;
   line-height: 3.6rem;
@@ -225,9 +225,12 @@ nav ul li a:hover {
   left: -3px;
   top: -1px;
 }
+.web-res {
+  width: 206px !important;
+}
 .e-bottom-divs img {
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 90px;
+  max-width: 90px;
 }
 .exc-1 {
   margin-left: 39px;
@@ -248,21 +251,21 @@ nav ul li a:hover {
   margin-left: 30px;
 }
 .expertise-2 {
-  padding-left: 16.2rem;
+  padding-left: 18.2rem;
 }
 .expertise-3 {
-  padding-left: 14.9rem;
+  padding-left: 17.9rem;
 }
 .expertise-4 {
-  padding-top: 34px;
+  padding-top: 40px;
 }
 .expertise-5 {
   padding-left: 17.4rem;
   padding-top: 45px;
 }
 .expertise-6 {
-  padding-left: 13rem;
-  padding-top: 37px;
+  padding-left: 16.6rem;
+  padding-top: 40px;
 }
 .expertise-4 img {
   width: 95px;
@@ -332,7 +335,7 @@ nav ul li a:hover {
   border-radius: 8px;
   filter: drop-shadow(0px 3px 9px rgba(0, 0, 0, 0.24));
   margin-top: 120px;
-  margin-bottom: 118px;
+  margin-bottom: 121px;
   width: 69.1rem;
 }
 .colab-right {
@@ -346,6 +349,7 @@ nav ul li a:hover {
   color: #000000;
   font-weight: 800;
   text-transform: uppercase;
+  margin-bottom: 13px;
 }
 .colab-right h2 {
   font-size: 4rem;
@@ -372,7 +376,7 @@ nav ul li a:hover {
   height: 69px;
   border-radius: 8px;
   background-color: #fd8200;
-  margin-top: 32px;
+  margin-top: 30px;
   border: 3px solid #fd8200;
   transition: 0.5s ease;
 }
@@ -436,6 +440,7 @@ nav ul li a:hover {
   font-weight: 700;
   font-family: "Montserrat";
   text-align: center;
+  word-spacing: 2px;
 }
 .quote h3 {
   font-size: 1.8rem;
@@ -445,7 +450,7 @@ nav ul li a:hover {
   font-weight: 900;
   font-family: "Inter";
   text-align: center;
-  margin-top: -8px;
+  margin-top: -6px;
   padding-bottom: 110px;
   text-transform: uppercase;
 }

@@ -71,7 +71,7 @@ nav ul li a:hover {
   margin-top: 2rem;
 }
 .header-inner {
-  max-width: 1150px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -170,7 +170,7 @@ nav ul li a:hover {
   transition: 0.5s ease;
 }
 .jobs-headinner {
-  max-width: 1150px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -195,7 +195,7 @@ nav ul li a:hover {
   transition: 0.5s ease;
 }
 .header-banner {
-  margin-top: 62px;
+  margin-top: 70px;
 }
 .career {
   margin-left: auto;
@@ -214,8 +214,9 @@ nav ul li a:hover {
 .career h2 {
   margin-top: 25px;
   font-family: "Montserrat";
-  font-size: 2rem;
+  font-size: 2.1rem;
   letter-spacing: 0px;
+  line-height: 30px;
 }
 .career ul li {
   font-family: "Montserrat";
